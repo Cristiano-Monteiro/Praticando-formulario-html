@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praticando formulário no Html</title>
+    <title>Praticando formulários no Html</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -17,13 +17,83 @@
                         name="password" 
                         id="Password"
                         minlength="5"
-                        maxlength="10"
+                        maxlength="8"
                         placeholder="Campo de Senha"
                         required
                         inputmode="numeric"
                         autocomplete="off"
+                        readonly
                 >
                 <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Input do tipo "email"</legend>
+                <label for="Email">Email:</label>
+                <datalist id="emaillist">
+                    <option>exemplo@exemplo.com.br</option>
+                </datalist>
+                <input type="email" 
+                        name="email" 
+                        id="Email"
+                        placeholder="exemplo@email.com.br"
+                        readonly
+                        required
+                        multiple
+                        minlength="8"
+                        maxlength="255"
+                        pattern=".+@email\.com\.br"
+                        title="É necessário um email específico."
+                        list="emaillist"
+                >
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Input do tipo "URL"</legend>
+                <label for="Url">URL:</label>
+                <datalist id="urlslist">
+                    <option>https://exemplourl.com.br</option>
+                </datalist>
+                <input type="url" 
+                        name="url" 
+                        id="Url"
+                        placeholder="https://exemplo.com.br"
+                        required
+                        pattern=".*\.com\.br.*"
+                        list="urlslist"
+                        spellcheck="true"
+                        readonly
+                >
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+        <form method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Input do tipo "file"</legend>
+                <label for="File">Arquivo/File:</label>
+                <input type="file" 
+                        name="file" 
+                        id="File"
+                        accept=".pdf"
+                        disabled
+                >
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Input do tipo "color"</legend>
+                <label for="Color">Cor/Color:</label>
+                <input type="color" 
+                        name="color" 
+                        id="Color"
+                >
             </fieldset>
         </form>
     </main>
