@@ -148,6 +148,44 @@
                 </select>
             </fieldset>
         </form>
+
+        <form>
+            <fieldset>
+                <label for="Optgroup">Optgroup:</label>
+                <select name="optgroup" id="Optgroup">
+                    <option value="000">Grupo de Opções</option>
+                    <optgroup label="Opções01:">
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                    </optgroup>
+                    <optgroup label="Opções02:">
+                        <option value="4" disabled>04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Input do tipo "search"</legend>
+                <label for="Search">Search:</label>
+                <datalist id="search">
+                    <option value="Busca1">Busca1</option>
+                    <option value="Busca2">Busca2</option>
+                    <option value="Busca3">Busca3</option>
+                </datalist>
+                <input type="search" 
+                        name="q" 
+                        list="search"
+                        placeholder="Campo de pesquisa"
+                        aria-label="Campo de pesquisa"
+                >
+                <button>Pesquisar</button>
+            </fieldset>
+        </form>
     </main>
 </body>
 </html>
