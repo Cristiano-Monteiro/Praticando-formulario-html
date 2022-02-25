@@ -9,69 +9,57 @@
 </head>
 <body>
     <main>
-        <form>
-            <fieldset>
-                <legend>Input do tipo "password"</legend>
-                <label for="Password">Senha/Password:</label>
-                <input type="password" 
-                        name="password" 
-                        id="Password"
-                        minlength="5"
-                        maxlength="8"
-                        placeholder="Campo de Senha"
-                        required
-                        inputmode="numeric"
-                        autocomplete="off"
-                        readonly
-                >
-                <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
+        <fieldset>
+            <legend>Input do tipo "password"</legend>
+            <label for="Password">Senha/Password:</label>
+            <input type="password" 
+                    name="password" 
+                    id="Password"
+                    minlength="5"
+                    maxlength="8"
+                    placeholder="Campo de Senha"
+                    required
+                    inputmode="numeric"
+                    autocomplete="off"
+            >
+        </fieldset>
 
-        <form>
-            <fieldset>
-                <legend>Input do tipo "email"</legend>
-                <label for="Email">Email:</label>
-                <datalist id="emaillist">
-                    <option>exemplo@exemplo.com.br</option>
-                </datalist>
-                <input type="email" 
-                        name="email" 
-                        id="Email"
-                        placeholder="exemplo@email.com.br"
-                        readonly
-                        required
-                        multiple
-                        minlength="8"
-                        maxlength="255"
-                        pattern=".+@email\.com\.br"
-                        title="É necessário um email específico."
-                        list="emaillist"
-                >
-                <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
+        <fieldset>
+            <legend>Input do tipo "email"</legend>
+            <label for="Email">Email:</label>
+            <datalist id="emaillist">
+                <option>exemplo@exemplo.com.br</option>
+            </datalist>
+            <input type="email" 
+                    name="email" 
+                    id="Email"
+                    placeholder="exemplo@email.com.br"
+                    required
+                    multiple
+                    minlength="8"
+                    maxlength="255"
+                    pattern=".+@email\.com\.br"
+                    title="É necessário um email específico."
+                    list="emaillist"
+            >
+        </fieldset>
 
-        <form>
-            <fieldset>
-                <legend>Input do tipo "URL"</legend>
-                <label for="Url">URL:</label>
-                <datalist id="urlslist">
-                    <option>https://exemplourl.com.br</option>
-                </datalist>
-                <input type="url" 
-                        name="url" 
-                        id="Url"
-                        placeholder="https://exemplo.com.br"
-                        required
-                        pattern=".*\.com\.br.*"
-                        list="urlslist"
-                        spellcheck="true"
-                        readonly
-                >
-                <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
+        <fieldset>
+            <legend>Input do tipo "URL"</legend>
+            <label for="Url">URL:</label>
+            <datalist id="urlslist">
+                <option>https://exemplourl.com.br</option>
+            </datalist>
+            <input type="url" 
+                    name="url" 
+                    id="Url"
+                    placeholder="https://exemplo.com.br"
+                    required
+                    pattern=".*\.com\.br.*"
+                    list="urlslist"
+                    spellcheck="true"
+            >
+        </fieldset>
 
         <form method="post" enctype="multipart/form-data">
             <fieldset>
@@ -86,106 +74,119 @@
             </fieldset>
         </form>
 
-        <form>
-            <fieldset>
-                <legend>Input do tipo "color"</legend>
-                <label for="Color">Cor/Color:</label>
-                <input type="color" 
-                        name="color" 
-                        id="Color"
-                >
-            </fieldset>
-        </form>
+        <fieldset>
+            <legend>Input do tipo "color"</legend>
+            <label for="Color">Cor/Color:</label>
+            <input type="color" 
+                    name="color" 
+                    id="Color"
+            >
+        </fieldset>
 
-        <form>
-            <fieldset>
-                <legend>Input do tipo "checkbox"</legend>
-                <label for="Checkbox">Caixa de seleção/Checkbox:</label>
-                <input type="checkbox" 
-                        name="checkbox" 
-                        id="Checkbox"
-                        checked
-                >
-            </fieldset>
-        </form>
+        <fieldset>
+            <legend>Input do tipo "checkbox"</legend>
+            <label for="Checkbox">Caixa de seleção/Checkbox:</label>
+            <input type="checkbox" 
+                    name="checkbox" 
+                    id="Checkbox"
+                    checked
+            >
+        </fieldset>
 
-        <form>
-            <input type="hidden" name="hidden">
-        </form>
+        <input type="hidden" name="hidden">
 
-        <form>
-            <fieldset>
-                <legend>Input do tipo "radio"</legend>
-                <label for="op1">Opção01:</label>
-                <input type="radio" name="op1" id="op1" value="opcao1" checked>
-                <label for="op2">Opção02:</label>
-                <input type="radio" name="op1" id="op1" value="opcao2">
-            </fieldset>
-        </form>
+        <fieldset>
+            <legend>Input do tipo "radio"</legend>
+            <label for="op1">Opção01:</label>
+            <input type="radio" name="op1" id="op1" value="opcao1" checked>
+            <label for="op2">Opção02:</label>
+            <input type="radio" name="op1" id="op1" value="opcao2">
+        </fieldset>
 
-        <form>
-            <fieldset>
-                <label for="Textarea">Textarea:</label>
-                <textarea 
-                    name="textarea" 
-                    id="Textarea" 
-                    cols="40" 
-                    rows="1"
-                    placeholder="Caixa de Mensagem"
-                    required
-                ></textarea>
-            </fieldset>
-        </form>
+        <fieldset>
+            <label for="Textarea">Textarea:</label>
+            <textarea 
+                name="textarea" 
+                id="Textarea" 
+                cols="40" 
+                rows="1"
+                placeholder="Caixa de Mensagem"
+                required
+            ></textarea>
+        </fieldset>
 
-        <form>
-            <fieldset>
-                <label for="Select">Select:</label>
-                <select name="select" id="Select">
-                    <option value="00">Opções</option>
-                    <option value="op1">Opção01</option>
-                    <option value="op2">Opção02</option>
-                    <option value="op3">Opção03</option>
-                </select>
-            </fieldset>
-        </form>
+        <fieldset>
+            <label for="Select">Select:</label>
+            <select name="select" id="Select">
+                <option value="00">Opções</option>
+                <option value="op1">Opção01</option>
+                <option value="op2">Opção02</option>
+                <option value="op3">Opção03</option>
+            </select>
+        </fieldset>
 
-        <form>
-            <fieldset>
-                <label for="Optgroup">Optgroup:</label>
-                <select name="optgroup" id="Optgroup">
-                    <option value="000">Grupo de Opções</option>
-                    <optgroup label="Opções01:">
-                        <option value="1">01</option>
-                        <option value="2">02</option>
-                        <option value="3">03</option>
-                    </optgroup>
-                    <optgroup label="Opções02:">
-                        <option value="4" disabled>04</option>
-                        <option value="5">05</option>
-                        <option value="6">06</option>
-                    </optgroup>
-                </select>
-            </fieldset>
-        </form>
+        <fieldset>
+            <label for="Optgroup">Optgroup:</label>
+            <select name="optgroup" id="Optgroup">
+                <option value="000">Grupo de Opções</option>
+                <optgroup label="Opções01:">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                </optgroup>
+                <optgroup label="Opções02:">
+                    <option value="4" disabled>04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                </optgroup>
+            </select>
+        </fieldset>
 
-        <form>
-            <fieldset>
-                <legend>Input do tipo "search"</legend>
-                <label for="Search">Search:</label>
-                <datalist id="search">
-                    <option value="Busca1">Busca1</option>
-                    <option value="Busca2">Busca2</option>
-                    <option value="Busca3">Busca3</option>
-                </datalist>
-                <input type="search" 
-                        name="q" 
-                        list="search"
-                        placeholder="Campo de pesquisa"
-                        aria-label="Campo de pesquisa"
-                >
-                <button>Pesquisar</button>
-            </fieldset>
-        </form>
+        <fieldset>
+            <legend>Input do tipo "search"</legend>
+            <label for="Search">Search:</label>
+            <datalist id="search">
+                <option value="Busca1">Busca1</option>
+                <option value="Busca2">Busca2</option>
+                <option value="Busca3">Busca3</option>
+            </datalist>
+            <input type="search" 
+                    name="q" 
+                    list="search"
+                    placeholder="Campo de pesquisa"
+                    aria-label="Campo de pesquisa"
+            >
+        </fieldset>
+
+        <fieldset>
+            <legend>Input do tipo "number"</legend>
+            <label for="Number">Number:</label>
+            <input type="number" id="Number" placeholder="Somente números">
+        </fieldset>
+
+        <fieldset>
+            <legend>Input do tipo "range"</legend>
+            <label for="Range">Range:</label>
+            <input type="range" id="Range" min="0" max="100" step="10" value="50">
+        </fieldset>
+
+        <fieldset>
+            <legend>Input do tipo "date"</legend>
+            <label for="Date">Date:</label>
+            <input type="date" id="Date">
+            <br><br>
+            <label for="Datetime">Datetime-local</label>
+            <input type="datetime-local" id="Datetime">
+            <br><br>
+            <label for="Month">Month:</label>
+            <input type="month" id="Month">
+            <br><br>
+            <label for="Time">Time:</label>
+            <input type="time" id="Time">
+            <br><br>
+            <label for="Week">Week:</label>
+            <input type="week" id="Week">
+        </fieldset>
     </main>
 </body>
 </html>
